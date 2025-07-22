@@ -5,6 +5,7 @@ This project implements a binary classification model to predict breast cancer d
 ## Dataset
 
 The project uses the `cancer.csv` dataset containing breast cancer diagnostic features:
+
 - **Features**: 30 numerical features including mean radius, texture, perimeter, area, smoothness, compactness, concavity, etc.
 - **Target**: Binary classification (1 = Malignant, 0 = Benign)
 - **Size**: Multiple samples with comprehensive feature measurements
@@ -20,22 +21,25 @@ The project uses the `cancer.csv` dataset containing breast cancer diagnostic fe
 ## Implementation
 
 ### Data Preprocessing
+
 - Train/test split (75%/25%)
 - Feature standardization using StandardScaler
 - Random state = 2 for reproducibility
 
 ### Training
+
 - Epochs: 10
 - Batch size: 16
 - Validation data: Test set
 
 ### Visualization
+
 - Training/validation accuracy curves
 - Training/validation loss curves
 
 ## Files
 
-- `TP065493_Stephen_Chow.ipynb`: Main notebook with complete implementation
+- `Week_2.ipynb`: Main notebook with complete implementation
 - `data/cancer.csv`: Breast cancer dataset
 - `README.md`: Project documentation
 
@@ -55,6 +59,7 @@ tensorflow>=2.8.0
 
 1. Clone the repository
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -70,6 +75,7 @@ pip install -r requirements.txt
 ## Expected Results
 
 The model achieves the following performance metrics:
+
 - **Training Accuracy**: ~95-98%
 - **Validation Accuracy**: ~92-96%
 - **Training Loss**: Decreases steadily over epochs
